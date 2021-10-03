@@ -1,7 +1,16 @@
 # Activity_life_cycle_flow
 This project helpful to understand activity life cycle methods
 
-An Android activity is one screen of the Android app's user interface.
+An Android activity is one screen of the Android app's user interface.Activities are stored in stack (A stack is an abstract data type that holds an ordered, linear sequence of items. In contrast to a queue, a stack is a last in, first out (LIFO) structure).Each activity should be declared in Manifest file.When you create a activity it genrates two file on is XML file for User Interface and one is java file to control the UI.
+
+Activity launches with some rules that is called lauch mode there are four types of launch modes are there.
+
+<B>Launch Modes<B>
+-----------------------
+1)Standard-->by Default<br>
+2)Single Top.<br>
+3)Single instance.<br>
+4)singleTask.<br>
 
 <B>Seven Important Life Cycle Methods<B>
 -------------------------------------------
@@ -32,3 +41,9 @@ onRestart>onStart>onResume
 
 When user back press from launched Activity<br>
 OnPause>onStart>onDestroy
+  
+<B>Some More Methods when orientation is changed<B>
+---------------------------
+onSaveInstanceState-->When orientation changed you need to manage the state of activity for Example value of any widget.
+  
+onRestoreInstanceState-->When orientation restored. 
