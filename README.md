@@ -18,3 +18,17 @@ onStop()<br>Invoked when app is no longer visible to user.Run after onPause meth
 onRestart()<br>Invoked when app is ready for visible to user but not visible yet.Run before onStart and onResume method.<br>
 
 onDestroy()<br>Invoked when app is removed from memory(Stack)<br>
+
+<B>Flow of Methods<B>
+-----------------
+When app launch 1st time<br>
+OnCreate>onStart>onResume<br>
+
+When user press Home button<br>
+onPause>onStop
+
+When user come back to app<br>
+onRestart>onStart>onResume
+
+When user back press from launched Activity<br>
+OnPause>onStart>onDestroy
