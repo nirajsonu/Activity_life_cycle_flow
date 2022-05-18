@@ -11,6 +11,41 @@ Activity launches with some rules that is called lauch mode there are four types
 2)Single Top.<br>
 3)Single instance.<br>
 4)singleTask.<br>
+  
+Stack:Last in First out
+Standard
+
+
+SingleTop
+OnNewIntent 
+if the instance is Top of the task then new Instance will be not created.if it is not in a top then it will created.
+
+SingleTask
+At a time one activity will be created.No duplicated actvity is created(Singleton)
+OnNewIntent() method will receive the callback.
+
+Task_Affinty
+------------------
+Seperate task  All pop from stack except we mark SigleTask as a activity
+
+
+Task_With_out_Affinty
+-------------------------
+All not pop only upper activity will be pop up than SigleTask as a activity
+
+
+SingleInstance
+only activty per intire task
+  
+  
+//This is used to set dynamacally set launch modes
+Intent Flags
+----------------
+startActvity()
+FLAG_ACTIVITY_NEW_TASK(Single Task)
+FLAG_ACTIVITY_SINGLE_TOP(Single Top)
+FLAG_ACTIVITY_CLEAR_TOP
+  
 
 <B>Seven Important Life Cycle Methods<B>
 -------------------------------------------
